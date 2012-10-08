@@ -35,6 +35,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@font-face {
+  font-family: 'Octicons Regular';
+  src: url("https://a248.e.akamai.net/assets.github.com/assets/octicons/octicons-regular-webfont-69018b7e023b2a01cd2cf9f4bd3863989a8e6198.eot");
+  src: url("https://a248.e.akamai.net/assets.github.com/assets/octicons/octicons-regular-webfont-69018b7e023b2a01cd2cf9f4bd3863989a8e6198.eot#iefix") format("embedded-opentype"), url("https://a248.e.akamai.net/assets.github.com/assets/octicons/octicons-regular-webfont-068ff52291caa28cff130c3590f60c7e504617a9.woff") format("woff"), url("https://a248.e.akamai.net/assets.github.com/assets/octicons/octicons-regular-webfont-8e1d6c7893cfa7a0fe30136c7345ba90796a1ca0.ttf") format("truetype"), url("https://a248.e.akamai.net/assets.github.com/assets/octicons/octicons-regular-webfont-fc215c1c266a0f350044647997a8a53fe6847880.svg#newFontRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /*---------------------------------------------------
     Just Mixins 1.0
   ---------------------------------------------------
@@ -356,6 +363,8 @@ a {
           color: #f15a24; }
           .main .speakers .speaker p a:hover {
             color: #bf3c13; }
+    .main .speakers .githubId span {
+      font-family: 'Octicons Regular'; }
   .main .schedule {
     zoom: 1; }
     .main .schedule:after {
