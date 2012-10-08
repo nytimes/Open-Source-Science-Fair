@@ -1,0 +1,442 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*---------------------------------------------------
+    Just Mixins 1.0
+  ---------------------------------------------------
+    Sass mixins that quickly generate a simple column structure.
+
+    For more information, see
+		https://github.com/lggarrison/just-columns
+-----------------------------------------------------*/
+.col {
+  float: left;
+  margin-right: 18px;
+  margin-bottom: 18px; }
+
+.col-last {
+  margin-right: 0; }
+
+.col-1 {
+  width: 135px; }
+
+.col-2 {
+  width: 288px; }
+
+.col-3 {
+  width: 441px; }
+
+.col-4 {
+  width: 594px; }
+
+.col-5 {
+  width: 747px; }
+
+.col-6 {
+  width: 900px; }
+
+body {
+  font-family: "adelle",georgia,"times new roman",times,serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  background-color: #f9f7e1;
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-position: top center; }
+
+a {
+  text-decoration: none;
+  color: #8cc920; }
+  a:hover {
+    text-decoration: underline; }
+
+.header,
+.main,
+.footer .ctnr {
+  width: 1024px;
+  margin: 0 auto; }
+
+.header {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 60px;
+  padding: 18px 36px; }
+  .header .logo {
+    text-indent: -10000px;
+    background-image: url(../images/nyt.png);
+    width: 163px;
+    height: 23px;
+    display: inline-block; }
+  .header .nav {
+    display: block;
+    float: right; }
+    .header .nav li {
+      display: inline-block;
+      margin-left: 33px; }
+      .header .nav li a {
+        font-family: "nyt-franklin",arial,helvetica,sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+        color: white; }
+        .header .nav li a:hover {
+          color: #8cc920; }
+
+.main {
+  background-color: #fffef3;
+  background-image: url(../images/bg_subtle_dots.png);
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 60px 60px;
+  float: none; }
+  .main .box {
+    position: relative;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: white;
+    padding: 30px 35px;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.08); }
+    .main .box p {
+      font-size: 16px;
+      line-height: 28px;
+      color: #999999;
+      margin-bottom: 28px; }
+      .main .box p:last-child {
+        margin-bottom: 0; }
+    .main .box .title {
+      font-size: 58px;
+      line-height: 64px;
+      color: #4d4d4d;
+      text-align: center;
+      margin-bottom: 10px;
+      font-family: "adelle",georgia,"times new roman",times,serif;
+      font-style: normal;
+      font-weight: 300; }
+    .main .box .subtitle {
+      font-size: 20px;
+      line-height: 24px;
+      color: #999999;
+      text-align: center;
+      margin-bottom: 20px;
+      font-family: "adelle",georgia,"times new roman",times,serif;
+      font-style: normal;
+      font-weight: 300; }
+    .main .box .dateline {
+      font-size: 25px;
+      line-height: 35px;
+      color: #8cc920;
+      text-align: center;
+      font-family: "adelle",georgia,"times new roman",times,serif;
+      font-style: normal;
+      font-weight: 300; }
+    .main .box .location {
+      float: right;
+      width: 207px;
+      margin-top: -50px;
+      margin-left: 35px;
+      margin-bottom: 40px;
+      background-image: url(../images/arrow_0.png);
+      background-repeat: no-repeat;
+      background-position: 140px 305px; }
+      .main .box .location p, .main .box .location a {
+        color: #8cc920; }
+      .main .box .location a:hover {
+        color: #8baf0b; }
+      .main .box .location p {
+        margin-left: 2px;
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 18px; }
+      .main .box .location p.credit {
+        font-size: 10px;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+        font-family: arial,helvetica,sans-serif;
+        color: #999999; }
+        .main .box .location p.credit a {
+          color: #4d4d4d; }
+  .main .boxTop {
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius-topright: 0;
+    -moz-border-radius-bottomright: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    -moz-border-radius-topleft: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 0;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    padding-left: 0;
+    padding-right: 0; }
+    .main .boxTop .beaker {
+      background-image: url(../images/banner_beaker_bg.png);
+      width: 97px;
+      height: 97px;
+      display: "block";
+      margin: -70px auto 4px;
+      text-align: center; }
+      .main .boxTop .beaker img {
+        margin-top: 10px; }
+  .main .button {
+    position: absolute;
+    bottom: -22px; }
+    .main .button h4 {
+      width: 830px;
+      text-align: center; }
+      .main .button h4 a {
+        display: inline-block;
+        height: 44px;
+        width: 224px;
+        background-color: #8cc920;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        font-size: 22px;
+        line-height: 44px;
+        color: white; }
+        .main .button h4 a:hover {
+          background-color: #8baf0b;
+          text-decoration: none; }
+    .main .button.orange h4 a {
+      background-color: #f15a24; }
+      .main .button.orange h4 a:hover {
+        background-color: #bf3c13; }
+  .main hr {
+    border: 0;
+    height: 1px;
+    background-color: #e2e0cf; }
+  .main .box, .main hr {
+    margin: 0 0 60px; }
+  .main h3 {
+    font-family: "adelle",georgia,"times new roman",times,serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 50px;
+    color: #22b5c2;
+    text-align: center;
+    margin-bottom: 20px; }
+    .main h3 div {
+      background-image: url(../images/arrow_1.png);
+      background-repeat: no-repeat;
+      background-position: 195px 16px; }
+      .main h3 div div {
+        background-image: url(../images/arrow_2.png);
+        background-repeat: no-repeat;
+        background-position: 618px 7px; }
+  .main .exhibitors table {
+    width: 100%; }
+    .main .exhibitors table tr td {
+      font-family: "adelle",georgia,"times new roman",times,serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 33px;
+      color: #999999;
+      text-align: center;
+      vertical-align: middle;
+      padding: 40px 0 50px;
+      width: 45%; }
+      .main .exhibitors table tr td.middle {
+        font-family: "nyt-franklin",arial,helvetica,sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        color: #22b5c2;
+        width: 10%; }
+  .main .speakers {
+    zoom: 1;
+    margin-bottom: 40px; }
+    .main .speakers:after {
+      display: block;
+      visibility: hidden;
+      height: 0;
+      clear: both;
+      content: "."; }
+    .main .speakers .speaker {
+      float: left;
+      width: 219px;
+      margin-right: 8px;
+      margin-bottom: 20px; }
+      .main .speakers .speaker:nth-child(4n+4) {
+        margin-right: 0px; }
+      .main .speakers .speaker .frame {
+        border: 12px solid white;
+        -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.08);
+        -moz-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.08);
+        box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.08);
+        margin-bottom: 8px; }
+      .main .speakers .speaker .addYourself,
+      .main .speakers .speaker .photo {
+        width: 195px;
+        height: 155px;
+        overflow: hidden;
+        position: relative; }
+      .main .speakers .speaker .photo {
+        -moz-opacity: 0.8;
+        -khtml-opacity: 0.8;
+        -webkit-opacity: 0.8;
+        opacity: 0.8; }
+      .main .speakers .speaker:hover .photo {
+        -moz-opacity: 1;
+        -khtml-opacity: 1;
+        -webkit-opacity: 1;
+        opacity: 1; }
+      .main .speakers .speaker .addYourself {
+        background-image: url(../images/speakers/addYourself.png); }
+        .main .speakers .speaker .addYourself p {
+          text-align: center;
+          position: relative;
+          color: #e29674;
+          text-transform: uppercase;
+          font-size: 16px;
+          top: 113px;
+          font-family: "nyt-franklin",arial,helvetica,sans-serif;
+          font-style: normal;
+          font-weight: 300; }
+      .main .speakers .speaker p {
+        text-align: center;
+        font-size: 22px;
+        line-height: 28px; }
+        .main .speakers .speaker p a {
+          font-size: 18px;
+          color: #f15a24; }
+          .main .speakers .speaker p a:hover {
+            color: #bf3c13; }
+  .main .schedule {
+    zoom: 1; }
+    .main .schedule:after {
+      display: block;
+      visibility: hidden;
+      height: 0;
+      clear: both;
+      content: "."; }
+    .main .schedule h3 {
+      text-align: left;
+      float: left;
+      width: 260px;
+      height: 95px;
+      background-image: url(../images/arrow_3.png);
+      background-repeat: no-repeat;
+      background-position: 144px 35px; }
+    .main .schedule .box {
+      float: right; }
+      .main .schedule .box table {
+        width: 100%; }
+        .main .schedule .box table tr td {
+          vertical-align: top;
+          padding-bottom: 8px; }
+          .main .schedule .box table tr td:first-child {
+            font-family: "adelle",georgia,"times new roman",times,serif;
+            font-style: normal;
+            font-weight: 100;
+            color: #8cc920;
+            font-size: 33px;
+            line-height: 33px;
+            text-align: right;
+            padding-right: 16px; }
+          .main .schedule .box table tr td:last-child {
+            font-family: "nyt-franklin",arial,helvetica,sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 24px;
+            color: #999999;
+            padding-top: 8px; }
+
+.footer {
+  background-image: url(../images/footer_bg_yellow.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #191a19; }
+  .footer .ctnr .ctnt {
+    padding: 30px 60px 60px;
+    position: relative; }
+    .footer .ctnr .ctnt .beaker {
+      position: absolute;
+      bottom: 0px;
+      right: 0px; }
+  .footer .title {
+    font-family: "adelle",georgia,"times new roman",times,serif;
+    font-style: normal;
+    font-weight: 100;
+    color: #8cc920;
+    font-size: 33px;
+    line-height: 33px;
+    padding-bottom: 14px; }
+  .footer .links {
+    zoom: 1; }
+    .footer .links:after {
+      display: block;
+      visibility: hidden;
+      height: 0;
+      clear: both;
+      content: "."; }
+    .footer .links ul {
+      float: left;
+      width: 254px;
+      margin-right: 20px; }
+      .footer .links ul li {
+        padding-bottom: 14px;
+        color: #f15a24; }
+        .footer .links ul li a {
+          color: white; }
+          .footer .links ul li a:hover {
+            color: #8cc920; }
+      .footer .links ul li:last-child {
+        padding-bottom: 0; }
+    .footer .links ul.last {
+      margin-right: 0; }
