@@ -319,6 +319,8 @@ a {
         -moz-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.08);
         box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.08);
         margin-bottom: 8px; }
+        .main .speakers .speaker .frame a:hover {
+          text-decoration: none; }
       .main .speakers .speaker .addYourself,
       .main .speakers .speaker .photo {
         width: 195px;
