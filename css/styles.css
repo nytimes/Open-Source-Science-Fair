@@ -218,8 +218,7 @@ a {
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 0; }
+    padding-right: 0; }
     .main .boxTop .beaker {
       background-image: url(../images/banner_beaker_bg.png);
       width: 97px;
@@ -229,11 +228,6 @@ a {
       text-align: center; }
       .main .boxTop .beaker img {
         margin-top: 10px; }
-    .main .boxTop .sponsor {
-      margin-top: 30px;
-      text-align: center;
-      height: 50px;
-      background-color: #EAEAE8; }
   .main .button {
     position: absolute;
     bottom: -22px; }
