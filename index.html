@@ -1,127 +1,214 @@
 <!DOCTYPE html>
-<html>
-
-<link rel="stylesheet" href="css/nytdev_stylesheet.css" type="text/css">
-
+<html lang="en">
 <head>
-<title>NYT Developers</title>
-<script src="javascript/raphael.js"></script>
-<script src="javascript/script.js"></script>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1" />
+	<title>NYTimes: Open Source Science Fair</title>
+	<link rel="stylesheet" href="./css/styles.css" />
+
+	<script type="text/javascript" src="//typeface.nytimes.com/sfn7bga.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 </head>
-
 <body>
+	<div class="header">
+		<a href="https://github.com/NYTimes/Open-Source-Science-Fair"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+			<p class="logo"><a href="http://nytimes.com">New York Times</a></p>
+			<ul class="nav">
+				<li><a href="http://opensourcesciencefair.eventbrite.com" target="_blank">Get Tickets</a></li>
+				<li><a href="#speakers">Speakers</a></li>
+				<li><a href="#getInvolved">Get Involved</a></li>
+				<li><a href="#schedule">Schedule</a></li>
+			</ul>
+	</div>
 
-	<header> 
-		<img src="images/NYTDevLogo.png" style="float: left;"> </img>
-		<div class = "mainMenu">
-			<table>
-			<tr>
-				<td><a href="http://open.blogs.nytimes.com/timesopen-schedule/" target="_blank">Events</a></td>
-				<td><a href="http://developer.nytimes.com/docs" target="_blank">API</a></td>
-				<td><a href="http://beta620.nytimes.com/" target="_blank">Beta</a></td>
-				<td><a href="http://beta620.nytimes.com/" target="_blank">Opensource</a></td>
-				<td><a href="http://open.blogs.nytimes.com/" target="_blank">Blog</a></td>
-				<td><a href="http://jobs.nytco.com/go/Technology-Jobs-in-New-York-City/348200/" target="_blank">Careers</a></td>
-			</tr>
-			</table>
-		</div>
-	</header>
-	<div class="container">
-		<div class="featuredText">
-			<h1>Open Source Science Fair 2.0</h1>
-			<h2>Join us on July 25 for Open Source Science Fair 2.0! Information about the event, blah blah it's going to be a great time. Hooray science fair!</h2>
-			<a href="http://opensourcesciencefair.com/" target="_blank"><div class = "button">Learn More</div></a>
-			<a href="http://opensourcesciencefair.eventbrite.com/" target="_blank"><div class = "button"> Buy Tickets </div></a>
-		</div>
-		<div id="paperFrame"><script src="javascript/script.js"></script></div>
-		<div class = "buckets">
-			<div class = "blog">
-				<a href = "http://open.blogs.nytimes.com/" target = "_blank"><img src = "images/open.png" </img></a>
-				<table>
-				<tr>
-					<td> </td>
-					<th> Latest Blog Posts </th>
-				</tr>
-				<tr>
-					<td> June 25 </td>
-					<td> <a href = "http://open.blogs.nytimes.com/2013/06/25/new-boundaries-for-the-districts-api/" target = "_blank">New Boundaries for the Districts API</a></td>
-				</tr>
-				<tr>
-					<td> June 11 </td>
-					<td> <a href = "http://open.blogs.nytimes.com/2013/06/11/gamification-done-right/" target = "_blank">Gamification Done Right</a></td>
-				</tr>
-				<tr>
-					<td> May 29 </td>
-					<td> <a href = "http://open.blogs.nytimes.com/2013/05/29/promises-promises/" target = "_blank">Promises, Promises</a></td>
-				</tr>
-				<tr>
-					<td> May 16 </td>
-					<td> <a href = "http://open.blogs.nytimes.com/2013/05/16/you-are-listening-to-the-new-york-times/" target = "_blank">You Are Listening to the New York Times</a></td>
-				</tr>
-				<tr>
-					<td> May 9 </td>
-					<td> <a href = "http://open.blogs.nytimes.com/2013/05/09/cool-tools-pdf2html/" target = "_blank">Cool Tools: pdf2html</a></td>
-				</tr>
-				</table>
+	<div class="main">
+		<div class="col-6 col-last">
+			<div class="box boxTop">
+				<div class="beaker"><img src="./images/banner_beaker.png" width="59" height="91" alt=""/></div>
+				<h1 class="title">Open Source Science Fair</h1>
+				<p class="subtitle">Join New York Times developers for a science fair and symposium focused on open source</p>
+				<h2 class="dateline">Thursday, November 15, 7&ndash;10:30 p.m.</h2>
 			</div>
-			<div class = "events">
-				<table>
-				<tr>
-					<td> </td>
-					<th> Upcoming Events </th>
-				</tr>
-				<tr>
-					<td> July 25 </td>
-					<td> <a href = "http://opensourcesciencefair.com/" target = "_blank">Open Source Science Fair 2.0</a></td>
-				</tr>
-				<tr>
-					<td> Sept 19 </td>
-					<td> <a href = "http://developer.nytimes.com" target = "_blank">Tools and Toolkits</a></td>
-				</tr>
-				<tr>
-					<td> Oct 16 </td>
-					<td> <a href = "http://developer.nytimes.com" target = "_blank">Performance</a></td>
-				</tr>
-				<tr>
-					<td> </td>
-					<td> <a href = "http://developer.nytimes.com" target = "_blank">See More...</a></td>
-				</tr>
-				<tr>
-					<td>&nbsp</td>
-					<td>&nbsp</td>
-				</tr>
-				</table>
+
+			<div class="box">
+				<div class="location">
+					<img src="./images/nytb.jpg" width="206" height="287" alt="" />
+					<p class="credit">Photo by <a target="_blank" href="http://www.flickr.com/photos/ogil/2499892047/sizes/o/in/photostream/">Dom Dada</a></p>
+					
+					<a title="The New York Times Building" href ="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=The+New+York+Times+Building,+New+York,+NY&aq=2&oq=The+New+York+Times&sll=40.75688,-73.990388&sspn=0.008257,0.01929&vpsrc=0&ie=UTF8&hq=&hnear=New+York+Times+Bldg,+New+York,+10018&t=m&z=16&iwloc=A">
+					<p>The New York Times</p>
+					<p>620 Eighth Avenue</p>
+					<p>New York, NY</p>
+					<p>15th Floor</p>
+					</a>
+				</div>
+				<div>
+					<p>Every year, the TimesOpen series brings together the NYC developer community for technical talks on various topics. We've enjoyed great speakers, insightful discussions and a lot of live coding. This year we're trying something new: an open source science fair and symposium.</p>
+					
+					<p>To kick off the night, we'll have our science fair. Contributors to the open source community will tell us a little bit about their projects and set up areas to show off their work. We won't have any model volcanoes, potato clocks or flatworms &mdash; but we will have booths, lightning talks and pull requests.</p>
+
+					<p>After the exhibitors, our speakers (so far, <a href="https://twitter.com/jashkenas" target="_blank">Jeremy Ashkenas</a> of The New York Times, <a href="https://twitter.com/rmurphey" target="_blank">Rebecca Murphey</a> of Bocoup and <a href="https://twitter.com/holman" target="_blank">Zach Holman</a> of GitHub) will talk about how to launch, scale and contribute to open source projects. No science fair is complete without awards, so we'll end the night with some ribbons and prizes!</p>
+				</div>
+				<div class="button">
+					<h4><a href="http://opensourcesciencefair.eventbrite.com" target="_blank">Get Tickets</a></h4>
+				</div>
 			</div>
-			<div class = "API">
+
+			<hr />
+
+			<a id="getInvolved"></a>
+			<h3><div><div>Be an Exhibitor</div></div></h3>
+
+			<div class="box exhibitors">
+
 				<table>
-				<tr>
-					<th> API Documentation</th>
-				</tr>
-				<tr>
-					<td> <a href = "http://developer.nytimes.com/docs/read/article_search_api" target = "_blank">Article Search API Version 1</a></td>
-				</tr>
-				<tr>
-					<td> <a href = "http://developer.nytimes.com/docs/read/best_sellers_api" target = "_blank">The Best Sellers API</a></td>
-				</tr>
-				<tr>
-					<td> <a href = "http://developer.nytimes.com/docs/read/most_popular_api">The Most Popular API</a></td>
-				</tr>
-				<tr>
-					<td> <a href = "http://developer.nytimes.com" target = "_blank">See More...</a></td>
-				</tr>
+					<tr>
+						<td>Got an open source project<br/> that needs contributors? </td>
+						<td class="middle">OR</td>
+						<td>Got a big idea to share with<br/> the open source community?</td>
+					</tr>
 				</table>
+
+				<div class="button orange">
+					<h4><a href="mailto:code@nytimes.com?subject=Exhibitor%20Sign%20Up">Sign Me Up</a></h4>
+				</div>
+
+			</div>
+
+			<a id="speakers"></a>
+			<h3>Speakers</h3>
+			<div class="speakers">
+				<div class="speaker">
+					<div class="frame">
+						<div class="photo">
+							<a href="https://github.com/jashkenas"><img src="./images/speakers/jeremy.jpg" /></a>
+						</div>
+					</div>
+					<p class="name">
+						Jeremy Ashkenas
+					</p>
+					<p class="githubId">
+						<a href="https://github.com/jashkenas">
+							<span></span>jashkenas
+						</a>
+					</p>
+				</div>
+				<div class="speaker">
+					<div class="frame">
+						<div class="photo">
+							<a href="https://github.com/rmurphey"><img src="./images/speakers/rebecca.jpg" /></a>
+						</div>
+					</div>
+					<p class="name">
+						Rebecca Murphey
+					</p>
+					<p class="githubId">
+						<a href="https://github.com/rmurphey">
+							<span></span>rmurphey
+						</a>
+					</p>
+				</div>
+				<div class="speaker">
+					<div class="frame">
+						<div class="photo">
+							<a href="https://github.com/holman"><img src="./images/speakers/zach.jpg" /></a>
+						</div>
+					</div>
+					<p class="name">
+						Zach Holman
+					</p>
+					<p class="githubId">
+						<a href="https://github.com/holman">
+							<span></span>holman
+						</a>
+					</p>
+				</div>
+				<div class="speaker">
+					<div class="frame">
+						<a href="mailto:code@nytimes.com?subject=Speaker%20Sign%20Up">
+							<div class="addYourself">
+									<p>Add Yourself</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<hr />
+
+			<div class="schedule">
+				<a id="schedule"></a>
+				<h3>Schedule</h3>
+
+				<div class="box col-3 col-last">
+					<table>
+						<tr>
+							<td>6:30</td>
+							<td>Doors open</td>
+						</tr>
+						<tr>
+							<td>7:00</td>
+							<td>Lightning talks by exhibitors</td>
+						</tr>
+						<tr>
+							<td>7:15</td>
+							<td>Science Fair!</td>
+						</tr>
+
+						<tr>
+							<td>8:15</td>
+							<td>Dinner</td>
+						</tr>
+						<tr>
+							<td>9:00</td>
+							<td>Keynote presentations</td>
+						</tr>
+						<tr>
+							<td>10:00</td>
+							<td>Awards</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 
 		</div>
 	</div>
-	<footer>
-		<table>
-		<td><a href = "http://nytimes.com" target = "_blank">NYTimes.com</a></td>
-		<td><a href = "http://www.nytimes.com/content/help/contact/directory.html" target = "_blank">Contact Us</a></td>
-		<td><a href = "http://www.nytimes.com/content/help/rights/terms/terms-of-service.html" target = "_blank">Terms of Service</a></td>
-		<td style="border: none;"><a href = "http://jobs.nytco.com/" target = "_blank">Careers</a></td>
-		</table>
-	</footer>
-</body>
 
+	<div class="footer">
+		<div class="ctnr">
+			<div class="ctnt">
+				<p class="title">
+					Science Fair Toolkit
+				</p>
+				<div class="links">
+
+					<ul>
+						<li><a href="http://github.com" target="_blank">github</a></li>
+						<li><a href="http://coffeescript.org" target="_blank">CoffeeScript</a></li>
+						<li><a href="http://rmurphey.com/" target="_blank">Adventures in JavaScript Development</a></li>
+						<li><a href="http://zachholman.com/" target="_blank">Zach Holman</a></li>
+					</ul>
+
+					<ul>
+						<li><a href="http://paulirish.com/" target="_blank">Paul Irish</a></li>
+						<li><a href="http://www.html5rocks.com/" target="_blank">HTML5 Rocks</a></li>
+						<li><a href="http://rubyonrails.org/" target="_blank">Ruby on Rails</a></li>
+						<li><a href="http://dochub.io/" target="_blank">DocHub</a></li>
+					</ul>
+
+					<ul class="last">
+						<li><a href="http://yayquery.com/" target="_blank">yayQuery</a></li>
+						<li><a href="http://lea.verou.me/" target="_blank">Lea Verou</a></li>
+						<li><a href="http://sass-lang.com/" target="_blank">Sass</a></li>
+					</ul>
+
+				</div>
+				<img class="beaker" src="./images/footer_beaker.png" />
+			</div>
+		</div>
+	</div>
+
+</body>
 </html>
