@@ -15,7 +15,8 @@ body{
 }
 
 a{
-	font-family: "NYTFranklin-Bold", Arial, Helvetica, sans-serif;
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 700;  
 	font-size: 10pt;
 	text-decoration: none;
 	color: #FFFFFF;
