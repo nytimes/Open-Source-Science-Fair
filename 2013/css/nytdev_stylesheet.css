@@ -104,7 +104,7 @@ p a:hover{
 
 #paperFrame{
 	float: right;
-	width: 500px;
+	width: auto;
 	background-color: #ffffff;
 	margin-top: -100px;
 	margin-bottom: 30px;
