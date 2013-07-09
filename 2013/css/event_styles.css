@@ -1,0 +1,94 @@
+.columnA{
+	width: 24%;
+	height: auto;
+	float: left;
+	margin: 0px;
+	background-color: #FFF;
+}
+
+.columnA .highlight{
+	border: 4px dotted #D1E8D0;
+	background-color: #FFF;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+	text-align: center
+}
+
+.columnA a{
+	color: #000;
+	font-family: "NYTFranklin-Bold", Arial, Helvetica, sans-serif;
+}
+
+.columnA a:hover{
+	color: #62bb45;
+}
+
+.columnA table{
+	background-color: #FFF;
+	font-family: "NYTFranklin-Light", Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+.columnA td{
+	border-bottom: 1px solid #58585b;
+	border-top: 1px solid #58585b;
+	padding: 10px 8px 10px 0px;
+	color: #000;
+}
+
+.columnA .button{
+	margin-top:10px;
+	margin-right: 0px;
+}
+
+
+.columnB{
+	width: 63%;
+	height: auto;
+	float: left;
+	margin-left: 5%;
+	padding-top: 45px;
+	background-color: #FFF;
+}
+
+.speaker{
+	overflow: auto;
+	padding-top: 10px;
+	width: 100%;
+	text-align: left;
+	height: auto;
+	background-color: #FFF;
+}
+
+.speaker img{
+	width: auto;
+	height: auto;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.speaker .text{
+	width: 73%;
+	height: auto;
+	margin-left: 10px;
+	background-color: #FFF;
+	float: left;
+}
+
+.columnB table{
+	background-color: #FFF;
+	font-family: "NYTFranklin-Light", Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+.columnB td{
+	border-bottom: 1px solid #58585b;
+	border-top: 1px solid #58585b;
+	padding: 10px 8px 10px 0px;
+	color: #000;
+}
