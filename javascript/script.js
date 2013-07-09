@@ -9,57 +9,54 @@ paper.path(["M381.912,451.26c-1.591-10.05-6.085-19.059-12.359-27.441c-25.698-34.
 
 paper.path(["M240.844,398.159l-11.08,4.957c0,0-2.84,6.318-2.347,15.513c0.382,7.16,4.398,15.742,7.488,19.334l5.938-2.962V398.159z"]).attr({fill: "#62BB45", stroke: "none"});
 
-var bubble1 = paper.circle(260, 240, 20);
-bubble1.attr({fill: "#62BB45", "stroke-width": 0, "fill-opacity": 100});
-var bubble2 = paper.circle(240, 240, 25);
-bubble2.attr({fill: "#62BB45", "stroke-width": 0, "fill-opacity": 100});
-var bubble3 = paper.circle(230, 240, 15);
-bubble3.attr({fill: "#62BB45", "stroke-width": 0, "fill-opacity": 100});
+var bubble1, bubble2, bubble3, bubble4, bubble5, bubble6;
 
-var bubble4 = paper.circle(260, 240, 20);
-bubble1.attr({fill: "#62BB45", "stroke-width": 0, "fill-opacity": 100});
-var bubble5 = paper.circle(240, 240, 25);
-bubble2.attr({fill: "#62BB45", "stroke-width": 0, "fill-opacity": 100});
-var bubble6 = paper.circle(230, 240, 15);
-bubble3.attr({fill: "#62BB45", "stroke-width": 0, "fill-opacity": 100});
-
-function bubblePath1(bubble) {
+function bubblePath1(bubble, delay) {
+	bubble = null;
+	bubble = paper.circle(260, 240, 20);
+	bubble.attr({fill: "#62BB45", "stroke-width": 0, "fill-opacity": 100});
     bubble.cy = bubble.cy || 40 - Math.random() * 15;
     bubble.cx = bubble.cx || 200 + Math.random() * 100;
     bubble.animate({
         cy: bubble.cy,
         cx: bubble.cx,
         opacity: 0
-    }, 1000);
+    }, delay);
 }
 
-function bubblePath2(bubble) {  
+function bubblePath2(bubble, delay) {  
+	bubble = null;
+	bubble = paper.circle(240, 240, 25);
+	bubble.attr({fill: "#62BB45", "stroke-width": 0, "fill-opacity": 100});
     bubble.cy = bubble.cy || 40 - Math.random() * 20;
     bubble.cx = bubble.cx || 200 + Math.random() * 130;
     bubble.animate({
         cy: bubble.cy,
         cx: bubble.cx,
         opacity: 0
-    }, 1600);
+    }, delay);
 }
 
-function bubblePath3(bubble) {    
+function bubblePath3(bubble, delay) {    
+	bubble = null;
+	bubble = paper.circle(230, 240, 15);
+	bubble.attr({fill: "#62BB45", "stroke-width": 0, "fill-opacity": 100});
     bubble.cy = bubble.cy || 40 - Math.random() * 30;
     bubble.cx = bubble.cx || 200 + Math.random() * 160;
     bubble.animate({
         cy: bubble.cy,
         cx: bubble.cx,
         opacity: 0
-    }, 900);
+    }, delay);
 }
 
 window.setInterval(function() {
-    bubblePath1(bubble1);
-    bubblePath2(bubble2);
-    bubblePath3(bubble3);
-    bubblePath1(bubble4);
-    bubblePath2(bubble5);
-    bubblePath3(bubble6);
-}, 500);
+    bubblePath1(bubble1, 1000);
+    bubblePath2(bubble2, 1600);
+    bubblePath3(bubble3, 900);
+    bubblePath1(bubble4, 1500);
+    bubblePath2(bubble5, 2100);
+    bubblePath3(bubble6, 1400);
+}, 700);
 
 })();
