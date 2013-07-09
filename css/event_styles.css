@@ -1,5 +1,5 @@
 .columnA{
-	width: 24%;
+	width: 25%;
 	height: auto;
 	float: left;
 	margin: 0px;
@@ -17,7 +17,8 @@
 
 .columnA a{
 	color: #000;
-	font-family: "NYTFranklin-Bold", Arial, Helvetica, sans-serif;
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 700;  
 }
 
 .columnA a:hover{
@@ -26,13 +27,16 @@
 
 .columnA table{
 	background-color: #FFF;
-	font-family: "NYTFranklin-Light", Arial, Helvetica, sans-serif;
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 500;
 	font-size: 10pt;
 	border-collapse: collapse;
     border-spacing: 0px;
 }
 
 .columnA td{
+		font-family: "nyt-franklin", Helvetica; 
+	font-weight: 500;
 	border-bottom: 1px solid #58585b;
 	border-top: 1px solid #58585b;
 	padding: 10px 8px 10px 0px;
@@ -80,7 +84,8 @@
 
 .columnB table{
 	background-color: #FFF;
-	font-family: "NYTFranklin-Light", Arial, Helvetica, sans-serif;
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 500;
 	font-size: 11pt;
 	border-collapse: collapse;
     border-spacing: 0px;

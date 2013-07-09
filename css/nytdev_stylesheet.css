@@ -37,7 +37,8 @@ header{
 
 /*---featured title---*/
 h1{     
-	font-family: "NYTFranklin-Bold", Arial, Helvetica, sans-serif;   
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 700;   
 	font-size: 32pt;     
 	color: #62bb45;
 	margin-bottom: 0px; 
@@ -45,8 +46,8 @@ h1{
 
 /*---featured description---*/
 h2{
-	font-family: "NYTFranklin-Light", Arial, Helvetica, sans-serif;    
-	font-weight: lighter;
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 500;  
 	font-size: 11pt;     
 	color: #000000; 
 	line-height: 150%;
@@ -54,25 +55,29 @@ h2{
 
 /*---Event title----*/
 h3{     
-	font-family: "NYTFranklin-Bold", Arial, Helvetica, sans-serif;   
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 700;   
 	font-size: 18pt;     
 	color: #62bb45;
 	margin-bottom: 0px; 
 }
 
 p{
-	font-family: "NYTFranklin-Light", Arial, Helvetica, sans-serif;
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 500;   
 	font-size: 11pt;
 }
 
 p a{
-	font-family: "NYTFranklin-Light", Arial, Helvetica, sans-serif;
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 500;
 	font-size: 11pt;
 	color: #62bb45;
 }
 
 p a:hover{
-	font-family: "NYTFranklin-Light", Arial, Helvetica, sans-serif;
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 500;
 	font-size: 11pt;
 	color: #000;
 }
@@ -120,7 +125,8 @@ p a:hover{
 
 .mainMenu td{
 	width: auto;
-	font-family: "NYTFranklin-Bold", Arial, Helvetica, sans-serif;
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 700;  
 	font-size: 10pt;
 	text-transform: uppercase;
 	padding: 0px 5px;
@@ -142,7 +148,8 @@ p a:hover{
 	border-radius:5px;
 	display:inline-block;
 	color:#FFFFFF;
-	font-family: "NYTFranklin-Light", Arial, Helvetica, sans-serif;
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 500;
 	font-size:13px;
 	padding: 10px;
 	text-align: center;
@@ -207,7 +214,8 @@ p a:hover{
 
 .buckets td{
 	width: auto;
-	font-family: "NYTFranklin-Light", Arial, Helvetica, sans-serif;
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 500;
 	font-size: 10pt;
 	padding: 3px 5px;
 	color: #000000;
@@ -216,8 +224,8 @@ p a:hover{
 
 .buckets th{
 	width: auto;
-	font-family: "NYTFranklin-Light", Arial, Helvetica, sans-serif;
-	font-weight: normal;
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 500;
 	font-size: 11pt;
 	padding: 3px 5px;
 	color: #62bb45;
@@ -241,8 +249,8 @@ footer{
 }
 
 footer a{
-	font-family: "NYTFranklin-Light", Arial, Helvetica, sans-serif;
-	font-weight: normal;
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 500;
 	font-size: .7em;
 	text-align: left;
 	color: #FFFFFF;
