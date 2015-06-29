@@ -1,0 +1,279 @@
+html, body, div, span, object, footer, header { 
+	margin: 0;   
+	padding: 0;   
+	border: 0;
+	font-size: 100%;   
+	font: inherit;   
+	vertical-align: baseline; 
+	background-color: #f1f1f2;
+}
+
+body{
+	width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a{
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 700;  
+	font-size: 10pt;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+a:hover{
+	color: #62bb45;
+}
+
+
+
+/*------------------------------HEADER + FONT STYLES---------------------------*/
+
+header{
+	height: 40px;
+	background-color: #000000;
+	padding: 20px 30px;
+}
+
+/*---featured title---*/
+h1{     
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 700;   
+	font-size: 32pt;     
+	color: #62bb45;
+	margin-bottom: 0px; 
+}
+
+/*---featured description---*/
+h2{
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 500;  
+	font-size: 11pt;     
+	color: #000000; 
+	line-height: 150%;
+}
+
+/*---Event title----*/
+h3{     
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 700;   
+	font-size: 18pt;     
+	color: #62bb45;
+	margin-bottom: 0px; 
+}
+
+p{
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 500;   
+	font-size: 11pt;
+}
+
+p a{
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 500;
+	font-size: 11pt;
+	color: #62bb45;
+}
+
+p a:hover{
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 500;
+	font-size: 11pt;
+	color: #000;
+}
+
+
+/*------------------------------FEATURED--------------------------------------*/
+
+.container{
+	background-color: #FFFFFF;
+	height: inherit;
+	padding: 30px;
+	overflow: auto;
+}
+
+.featuredText{
+	background-color: inherit;
+	height: auto;
+	width: 400px;
+	float: left;
+	margin: auto 0px;
+}
+
+.featuredImage{
+	background-color: inherit;
+	height: auto;
+	width: 500px;
+	float: right;
+}
+
+#paperFrame{
+	float: right;
+	width: auto;
+	background-color: #ffffff;
+	margin-top: -100px;
+	margin-bottom: 30px;
+}
+
+
+/*----------------------------------MAIN MENU-------------------------------*/
+
+.mainMenu table{
+	float: right;
+	margin-top: 25px;
+}
+
+.mainMenu td{
+	width: auto;
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 700;  
+	font-size: 10pt;
+	text-transform: uppercase;
+	padding: 0px 5px;
+	color: #FFFFFF;
+}
+
+/*----------------------------------BUTTON-------------------------------*/
+
+.button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #62ba45;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #62ba45;
+	box-shadow:inset 0px 1px 0px 0px #62ba45;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811) );
+	background:-moz-linear-gradient( center top, #77d42a 5%, #5cb811 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77d42a', endColorstr='#5cb811');
+	background-color:#77d42a;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	display:inline-block;
+	color:#FFFFFF;
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 500;
+	font-size:13px;
+	padding: 10px;
+	text-align: center;
+	text-decoration:none;
+	margin-right: 10px;
+	width: 150px;
+}.button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a) );
+	background:-moz-linear-gradient( center top, #5cb811 5%, #77d42a 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb811', endColorstr='#77d42a');
+	background-color:#5cb811;
+}.button:active {
+	position:relative;
+	top:1px;
+}
+
+/*----------------------------------BUCKETS-------------------------------*/
+
+.buckets{
+	overflow: inherit;
+	width: 974px;
+	height: auto;
+	border-top: 1px solid #93d17c;
+	margin: 60px auto 0px auto;
+	background-color: #FFFFFF;
+	padding-top: 20px;
+}
+
+.buckets a{
+	color: #58585b;
+}
+
+.buckets a:hover{
+	color: #62bb45;
+}
+
+.buckets .blog{
+	overflow: auto;
+	width: 486px;
+	border-right: 1px solid #93d17c;
+	float: left;
+	background-color: #FFFFFF;
+}
+
+.buckets .events{
+	width: 273px;
+	border-right: 1px solid #93d17c;
+	float: left;
+	background-color: #FFFFFF;
+}
+
+.buckets .API{
+	width: 213px;
+	float: right;
+	background-color: #FFFFFF;
+}
+
+.buckets table{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.buckets td{
+	width: auto;
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 500;
+	font-size: 10pt;
+	padding: 3px 5px;
+	color: #000000;
+	text-align: left;
+}
+
+.buckets th{
+	width: auto;
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 500;
+	font-size: 11pt;
+	padding: 3px 5px;
+	color: #62bb45;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.buckets img{
+	float: left;
+	margin-top: 20px;
+}
+
+
+/*------------------------------FOOTER---------------------------------------*/
+
+footer{
+	height: 40px;
+	background-color: #000000;
+	padding: 20px 30px;
+	color: #FFFFFF;
+}
+
+footer a{
+	font-family: "nyt-franklin", Helvetica; 
+	font-weight: 500;
+	font-size: .7em;
+	text-align: left;
+	color: #FFFFFF;
+}
+
+footer a:hover{
+	color: #62bb45;
+}
+
+footer table{
+	margin: 10px 0px;
+	list-style: none;
+}
+
+footer td{
+	border-right: 1px solid #FFFFFF;
+	height: 3px;
+	text-align: center;
+	line-height: 7px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+
+</style>
